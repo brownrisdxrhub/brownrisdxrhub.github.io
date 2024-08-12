@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="/images/logo.svg">
+</head>
+
+<body>
+  <div class="custom-cursor"></div>
+  <div class="hero-animation">
+    <video autoplay muted loop class="" title="">
+      <source src="images/hero-animation.mp4" type="video/mp4"/>
+    </video>
+  </div>
+  <nav>
+    <div><a href="" class="nav"><p>Brown | RISD XR HUB</p></a></div>
+    <div class="nav-right">
+      <a href="about/index.html"><p class="nav-link">ABOUT</p></a>
+      <a href="initiatives/index.html"><p class="nav-link">INITIATIVES</p></a>
+      <div class="calendar-button">
+        <a href="https://calendar.google.com/calendar/embed?src=c_213efa676f46990bb9591a1e81b3199a64c302b630b1f503df6214539e459fe6%40group.calendar.google.com&ctz=America%2FNew_York" target="_blank" class="row-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+          <p class="calendar-text">CALENDAR</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- START OF MOBILE -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    </div>
+
+    <div class="full-menu" id="fullMenu">
+      <div class="menu-content">
+        <div class="close-menu" onclick="toggleMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </div>
+        <a href="" class="nav-link">HOME</a>
+        <a href="about/index.html" class="nav-link">ABOUT</a>
+        <a href="initiatives/index.html" class="nav-link">INITIATIVES</a>
+        <a href="https://calendar.google.com/calendar/embed?src=c_213efa676f46990bb9591a1e81b3199a64c302b630b1f503df6214539e459fe6%40group.calendar.google.com&ctz=America%2FNew_York" target="_blank" class="nav-link row-icon">
+          CALENDAR
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+        </a>
+        <div class="social-media-links">
+          <a href="mailto:xrhub@brown.edu" target="_blank">Email</a>
+          <a href="https://www.instagram.com/xr_hub_/" target="_blank">Instagram</a>
+          <a href="https://join.slack.com/t/brown-plus-xr/shared_invite/zt-2o9e09p2f-UO6pXLf3hMC~wiKuGPtauQ" target="_blank">Slack</a>
+        </div>
+      </div>
+    </div>
+    <!-- END OF MOBILE -->
+  </nav>
+  
+  <h1 class="hero-text">
+    Brown | RISD XR HUB
+  </h1>
+
+  <div class="tooltip-container">
+    <div class="tooltip button" style="background: var(--dark-overlay-color);">
+      What is XR?
+      <p class="tooltip-text">
+        XR stands for <span>extended-reality</span>, which is used as an umbrella term that groups augmented reality, virtual reality, and mixed-reality technologies together.
+      </p>
+    </div>
+    
+    <div class="tooltip button" style="background: var(--dark-overlay-color);">
+      Our Mission
+      <div class="tooltip-text gap-sm">
+        <p>
+          XR Hub seeks to provide an educational platform for Brown and RISD student bodies highlighting the rapidly-progressing world of XR technologies.
+        </p>
+        <p>
+          Members can work towards building the skills needed to create XR projects, ranging from games to art installations to public health initiatives and many other applications. As we move forward, our team will look for sponsorship, collaboration opportunities, and access to equipment both inside and outside the school.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
