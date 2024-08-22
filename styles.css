@@ -610,9 +610,9 @@ img.modal-image, .modal-content video {
   opacity: 1;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1440px) {
   body {
-    max-width: 1400px; 
+    max-width: 1440px; 
     margin: 0 auto; 
   }
 }
